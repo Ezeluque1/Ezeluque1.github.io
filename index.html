@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== SEO ===== -->
+  <title>Ezequiel Luque | Backend Developer Jr. (Node.js, TypeScript, PostgreSQL)</title>
+  <meta name="description" content="Portfolio de Ezequiel Luque, técnico en desarrollo de software. Proyectos backend con Node.js, TypeScript y PostgreSQL: RotiOS, un SaaS multitenant para rotiserías, y Folderly, una aplicación que automatiza el orden de archivos.">
+  <meta name="author" content="Ezequiel Luque">
+  <meta name="theme-color" content="#ff6900">
+
+  <!-- PENDIENTE: reemplazar la URL de abajo por la URL real de GitHub Pages
+       (por ejemplo https://ezeluque1.github.io/portfolio/) en <link rel="canonical">,
+       en og:url y en og:image. Sin la URL absoluta, la imagen de Open Graph no se ve
+       al compartir el link en LinkedIn o WhatsApp. -->
+  <link rel="canonical" href="https://ezeluque1.github.io/portfolio/">
+
+  <!-- ===== Open Graph / Twitter ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Ezequiel Luque">
+  <meta property="og:title" content="Ezequiel Luque | Backend Developer Jr. (Node.js, TypeScript, PostgreSQL)">
+  <meta property="og:description" content="Portfolio de Ezequiel Luque, técnico en desarrollo de software. Proyectos backend con Node.js, TypeScript y PostgreSQL: RotiOS, un SaaS multitenant para rotiserías, y Folderly, una aplicación que automatiza el orden de archivos.">
+  <meta property="og:url" content="https://ezeluque1.github.io/portfolio/">
+  <meta property="og:image" content="https://ezeluque1.github.io/portfolio/assets/rotios-caja.png">
+  <meta property="og:image:alt" content="Caja abierta con cobros por medio de pago y efectivo en el cajón">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ====================================================================
+       CABECERA FIJA
+       ==================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#inicio">
+        <span class="brand__mark" aria-hidden="true">EL</span>
+        <span class="brand__name">Ezequiel Luque</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#sobre-mi">Sobre mí</a></li>
+          <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
+          <li><a class="nav__link" href="#habilidades">Habilidades</a></li>
+          <li><a class="nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <!-- Selector de modo claro / oscuro -->
+        <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false">
+          <span class="icon-btn__icon" aria-hidden="true" data-theme-icon>☾</span>
+          <span class="sr-only" data-theme-label>Activar modo oscuro</span>
+        </button>
+
+        <!-- Botón de menú (solo en pantallas chicas) -->
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
+          <span class="icon-btn__icon" aria-hidden="true">☰</span>
+          <span class="sr-only">Abrir menú</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ==================================================================
+         1. HERO
+         ================================================================== -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero__inner reveal">
+        <p class="hero__eyebrow">Backend Developer Jr.</p>
+        <h1 class="hero__title">Ezequiel Luque</h1>
+        <p class="hero__subtitle">Backend Developer Jr. · Node.js · TypeScript · PostgreSQL</p>
+        <p class="hero__lead">
+          Técnico en Desarrollo de Software. Construyo sistemas backend que no fallan en silencio.
+        </p>
+
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--ghost" href="https://github.com/Ezeluque1" target="_blank" rel="noopener noreferrer">
+            GitHub <span class="btn__ext" aria-hidden="true">↗</span>
+          </a>
+          <a class="btn btn--ghost" href="#contacto">Contacto</a>
+
+          <!-- FALTA EL CV: cuando tengas el PDF, guardalo como
+               assets/cv-ezequiel-luque.pdf y descomentá este botón.
+          <a class="btn btn--ghost" href="assets/cv-ezequiel-luque.pdf" download>
+            Descargar CV <span class="btn__ext" aria-hidden="true">↓</span>
+          </a>
+          -->
+        </div>
+
+        <ul class="hero__meta">
+          <li>Villa del Rosario, Córdoba, Argentina</li>
+          <li>Busco trabajo remoto</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         2. SOBRE MÍ
+         ================================================================== -->
+    <section class="section" id="sobre-mi">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__kicker">01</p>
+          <h2 class="section__title">Sobre mí</h2>
+        </header>
+
+        <div class="about reveal">
+          <div class="about__text">
+            <p>
+              Soy Ezequiel, técnico en desarrollo de software de Villa del Rosario, Córdoba
+              (egreso en noviembre de 2026). Me enfoco en backend con Node.js, TypeScript y PostgreSQL.
+            </p>
+            <p>
+              Lo que más me importa es construir sistemas que no fallen en silencio. En RotiOS, por
+              ejemplo, el sistema prefiere devolver un error antes que mostrarle a un local los datos
+              de otro; y en Folderly nunca se pisa un archivo y siempre se puede deshacer el último orden.
+            </p>
+            <p>
+              Hoy busco mi primer rol como Backend Junior en un equipo remoto.
+            </p>
+          </div>
+
+          <!-- Datos rápidos -->
+          <dl class="facts">
+            <div class="facts__item">
+              <dt>Título</dt>
+              <dd>Técnico Superior en Desarrollo de Software, Instituto Superior Villa del Rosario (egreso: 19/11/2026)</dd>
+            </div>
+            <div class="facts__item">
+              <dt>Rol buscado</dt>
+              <dd>Backend Developer Junior, remoto</dd>
+            </div>
+            <div class="facts__item">
+              <dt>Idiomas</dt>
+              <dd>Español (nativo); inglés técnico (lectura de documentación)</dd>
+            </div>
+            <div class="facts__item">
+              <dt>Ubicación</dt>
+              <dd>Villa del Rosario, Córdoba, Argentina</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         3. PROYECTOS
+         Cada tarjeta muestra siempre lo esencial (etiqueta, nombre, pitch,
+         botones y números). Las capturas y el detalle técnico van en paneles
+         colapsables para que la página no quede larguísima.
+         ================================================================== -->
+    <section class="section section--alt" id="proyectos">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__kicker">02</p>
+          <h2 class="section__title">Proyectos</h2>
+          <p class="section__intro">
+            Dos proyectos individuales, desarrollados al 100 % por mí.
+          </p>
+        </header>
+
+        <!-- ------------------------------------------------------------
+             3.1 ROTIOS — Proyecto grande
+             ------------------------------------------------------------ -->
+        <article class="project reveal" id="rotios" aria-labelledby="rotios-titulo">
+
+          <header class="project__head">
+            <div class="project__tags">
+              <span class="tag tag--big">Proyecto grande</span>
+              <span class="tag tag--state">Corre en local</span>
+            </div>
+            <h3 class="project__title" id="rotios-titulo">RotiOS</h3>
+            <p class="project__tagline">SaaS multitenant de gestión para rotiserías</p>
+            <p class="project__lead">
+              Sistema de gestión de menú, pedidos y caja donde una sola base de datos y un solo deploy
+              atienden a varios locales, cada uno completamente aislado de los demás.
+            </p>
+            <p class="project__role">Proyecto individual, desarrollado al 100 % por Ezequiel.</p>
+
+            <div class="btn-row">
+              <a class="btn btn--primary" href="https://github.com/Ezeluque1/RotiOS" target="_blank" rel="noopener noreferrer">
+                Ver repositorio <span class="btn__ext" aria-hidden="true">↗</span>
+              </a>
+              <!-- DEMO ONLINE: cuando exista, descomentá este botón y poné la URL.
+              <a class="btn btn--ghost" href="URL_DE_LA_DEMO" target="_blank" rel="noopener noreferrer">
+                Ver demo online <span class="btn__ext" aria-hidden="true">↗</span>
+              </a>
+              -->
+              <a class="btn btn--ghost" href="#rotios-local">Cómo probarlo en local</a>
+            </div>
+          </header>
+
+          <!-- Cuerpo del proyecto -->
+          <div class="project__body">
+
+            <!-- Números: siempre visibles, es lo primero que mira un reclutador -->
+            <div class="block">
+              <h4 class="block__title">Números verificables</h4>
+              <p class="block__note">Tomados del repositorio.</p>
+              <ul class="stats">
+                <li class="stat"><span class="stat__num">+30</span><span class="stat__label">endpoints REST</span></li>
+                <li class="stat"><span class="stat__num">4</span><span class="stat__label">roles</span></li>
+                <li class="stat"><span class="stat__num">10</span><span class="stat__label">modelos en el esquema de Prisma</span></li>
+                <li class="stat"><span class="stat__num">96</span><span class="stat__label">tests automatizados (Vitest + Supertest) contra PostgreSQL real</span></li>
+                <li class="stat"><span class="stat__num">9</span><span class="stat__label">pantallas en el frontend</span></li>
+                <li class="stat"><span class="stat__num">3</span><span class="stat__label">locales de demostración en el seed, con un día de operación completo</span></li>
+              </ul>
+            </div>
+
+            <!-- Capturas y detalle técnico, en paneles colapsables -->
+            <div class="accordion">
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Capturas de pantalla
+                  <span class="panel__count" data-shot-count></span>
+                </summary>
+                <div class="panel__body">
+                  <div class="gallery" data-gallery="RotiOS">
+                    <figure class="shot">
+                      <button class="shot__btn" type="button" data-shot aria-label="Ampliar: Pantalla de login de RotiOS">
+                        <img src="assets/rotios-login.png" alt="Pantalla de login de RotiOS" width="1916" height="658" loading="lazy" decoding="async">
+                      </button>
+                      <figcaption class="shot__cap">Pantalla de ingreso</figcaption>
+                    </figure>
+
+                    <figure class="shot">
+                      <button class="shot__btn" type="button" data-shot aria-label="Ampliar: Panel de inicio de RotiOS para el administrador del local">
+                        <img src="assets/rotios-inicio.png" alt="Panel de inicio de RotiOS para el administrador del local" width="1917" height="355" loading="lazy" decoding="async">
+                      </button>
+                      <figcaption class="shot__cap">Inicio con accesos a Nuevo pedido, Pedidos, Caja y Menú</figcaption>
+                    </figure>
+
+                    <!-- NOTA: esta captura se editó para borrar un teléfono personal que se veía en el
+                         campo de contacto. Lo ideal sigue siendo rehacerla con un cliente de ejemplo. -->
+                    <figure class="shot">
+                      <button class="shot__btn" type="button" data-shot aria-label="Ampliar: Pantalla para cargar un pedido de mostrador en RotiOS">
+                        <img src="assets/rotios-nuevo-pedido.png" alt="Pantalla para cargar un pedido de mostrador en RotiOS" width="1918" height="507" loading="lazy" decoding="async">
+                      </button>
+                      <figcaption class="shot__cap">Carga de un pedido con variantes y total</figcaption>
+                    </figure>
+
+                    <figure class="shot">
+                      <button class="shot__btn" type="button" data-shot aria-label="Ampliar: Lista de pedidos del día con su estado y de cobro">
+                        <img src="assets/rotios-pedidos.png" alt="Lista de pedidos del día con su estado y de cobro" width="1915" height="546" loading="lazy" decoding="async">
+                      </button>
+                      <figcaption class="shot__cap">Lista de pedidos del día con estados</figcaption>
+                    </figure>
+
+                    <figure class="shot">
+                      <button class="shot__btn" type="button" data-shot aria-label="Ampliar: Caja abierta con cobros por medio de pago y efectivo en el cajón">
+                        <img src="assets/rotios-caja.png" alt="Caja abierta con cobros por medio de pago y efectivo en el cajón" width="1915" height="643" loading="lazy" decoding="async">
+                      </button>
+                      <figcaption class="shot__cap">Turno de caja con cobros por medio y efectivo esperado</figcaption>
+                    </figure>
+
+                    <figure class="shot">
+                      <button class="shot__btn" type="button" data-shot aria-label="Ampliar: Administración del menú con categorías y variantes">
+                        <img src="assets/rotios-menu.png" alt="Administración del menú con categorías y variantes" width="1901" height="910" loading="lazy" decoding="async">
+                      </button>
+                      <figcaption class="shot__cap">Menú con categorías, productos y variantes</figcaption>
+                    </figure>
+
+                    <!-- FALTAN DOS CAPTURAS. Cuando las tengas, guardalas en assets/ con esos
+                         nombres y descomentá el <figure> que corresponda.
+
+                    <figure class="shot">
+                      <button class="shot__btn" type="button" data-shot aria-label="Ampliar: Vista del repartidor con los pedidos en camino">
+                        <img src="assets/rotios-en-la-calle.png" alt="Vista del repartidor con los pedidos en camino" loading="lazy" decoding="async">
+                      </button>
+                      <figcaption class="shot__cap">Vista del repartidor con pedidos en la calle</figcaption>
+                    </figure>
+
+                    <figure class="shot">
+                      <button class="shot__btn" type="button" data-shot aria-label="Ampliar: Cierre de caja con arqueo">
+                        <img src="assets/rotios-cierre-caja.png" alt="Cierre de caja con arqueo" loading="lazy" decoding="async">
+                      </button>
+                      <figcaption class="shot__cap">Cierre de caja con arqueo y diferencia</figcaption>
+                    </figure>
+                    -->
+                  </div>
+                </div>
+              </details>
+
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Problema que resuelve
+                </summary>
+                <div class="panel__body">
+                  <p>
+                    Una rotisería toma pedidos por teléfono y por mostrador, los anota en papel o los
+                    recuerda de memoria, y al cerrar el día no sabe si la plata del cajón se corresponde
+                    con lo que vendió. Con delivery, nadie sabe con certeza qué pedidos están en la calle
+                    ni cuáles ya se cobraron.
+                  </p>
+                  <h5 class="block__sub">Qué resuelve concretamente</h5>
+                  <ul class="list">
+                    <li>El pedido queda registrado con el precio del momento, así los cierres de caja viejos siguen siendo correctos aunque cambien los precios.</li>
+                    <li>El estado del pedido es visible (preparando, listo, en camino, entregado), tanto para el mostrador como para el repartidor.</li>
+                    <li>La caja cuadra, o se sabe por cuánto no cuadra: el cierre compara el efectivo contado contra el esperado y guarda la diferencia.</li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Funcionalidades
+                </summary>
+                <div class="panel__body">
+                  <ul class="list">
+                    <li>Menú con categorías, productos y variantes (por ejemplo cuarto, medio y entero).</li>
+                    <li>Pedidos de retiro y delivery, con costo de envío configurable.</li>
+                    <li>Caja: apertura de turno, cobros en cuatro medios de pago (efectivo, transferencia, débito y crédito), movimientos de ingreso y egreso, y cierre con arqueo.</li>
+                    <li>Cuatro roles: superadmin (alta de locales), admin (dueño del local), cajero y repartidor.</li>
+                    <li>Vista propia para el repartidor: solo ve los pedidos que lleva y los marca como entregados.</li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Decisiones técnicas destacadas
+                </summary>
+                <div class="panel__body">
+                  <ol class="decisions">
+                    <li>
+                      <strong>Aislamiento entre locales (multitenancy) a nivel de acceso a datos.</strong>
+                      Una sola base con una columna <code>tenantId</code>, pero el filtro no se escribe a
+                      mano: se inyecta con un contexto por request (<code>AsyncLocalStorage</code>) y una
+                      extensión de Prisma. Si falta el contexto, el sistema lanza un error en lugar de
+                      consultar sin filtro.
+                    </li>
+                    <li>
+                      <strong>El <code>tenantId</code> sale solo del token JWT.</strong>
+                      Ningún endpoint de dominio lo acepta por body, query ni header.
+                    </li>
+                    <li>
+                      <strong>Pedir un recurso de otro local devuelve 404, nunca 403</strong>,
+                      para no confirmar que ese id existe.
+                    </li>
+                    <li>
+                      <strong>El repartidor tiene endpoints propios</strong> en lugar de permisos sobre
+                      los del mostrador: el alcance del rol queda escrito en el router y en la validación.
+                    </li>
+                    <li>
+                      <strong>Arquitectura en capas</strong> (routes, controllers, services, repositories)
+                      con interfaces explícitas e inyección de dependencias por constructor.
+                    </li>
+                    <li>
+                      <strong>Borrado lógico en el menú</strong>, porque los pedidos históricos tienen que
+                      seguir siendo legibles.
+                    </li>
+                  </ol>
+                </div>
+              </details>
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Stack
+                </summary>
+                <div class="panel__body">
+                  <dl class="stack">
+                    <div class="stack__row">
+                      <dt>Backend</dt>
+                      <dd><span class="chip">Node 22</span><span class="chip">TypeScript</span><span class="chip">Express 5</span><span class="chip">Prisma 7</span><span class="chip">Zod 4</span><span class="chip">JWT + bcrypt</span></dd>
+                    </div>
+                    <div class="stack__row">
+                      <dt>Base de datos</dt>
+                      <dd><span class="chip">PostgreSQL 17</span></dd>
+                    </div>
+                    <div class="stack__row">
+                      <dt>Testing</dt>
+                      <dd><span class="chip">Vitest 4</span><span class="chip">Supertest</span></dd>
+                    </div>
+                    <div class="stack__row">
+                      <dt>Frontend</dt>
+                      <dd><span class="chip">React 19</span><span class="chip">Vite</span><span class="chip">Tailwind CSS v4</span><span class="chip">React Router</span><span class="chip">TanStack Query</span></dd>
+                    </div>
+                    <div class="stack__row">
+                      <dt>Infraestructura</dt>
+                      <dd><span class="chip">Docker Compose (PostgreSQL de desarrollo)</span></dd>
+                    </div>
+                  </dl>
+                </div>
+              </details>
+
+              <!-- DEMO EN VIDEO: cuando tengas el video o GIF (30 a 60 s: tomar un pedido,
+                   cobrarlo y cerrar la caja), guardalo como assets/rotios-demo.mp4 y
+                   descomentá este panel.
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Demo en video
+                </summary>
+                <div class="panel__body">
+                  <video class="demo-video" controls preload="metadata" poster="assets/rotios-caja.png">
+                    <source src="assets/rotios-demo.mp4" type="video/mp4">
+                    Tu navegador no puede reproducir el video.
+                  </video>
+                </div>
+              </details>
+              -->
+
+              <details class="panel" id="rotios-local">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Cómo probarlo en local
+                </summary>
+                <div class="panel__body">
+                  <div class="code-block">
+                    <button class="code-block__copy" type="button" data-copy>Copiar</button>
+<pre><code>git clone https://github.com/Ezeluque1/RotiOS.git
+docker compose up -d                 # PostgreSQL en localhost:5433
+
+cd Backend
+cp .env.example .env
+npm install
+npx prisma generate
+npx prisma migrate deploy
+npm run seed                         # 3 rotiserías demo con un día de operación
+npm run dev                          # API en http://localhost:3000
+
+# en otra terminal
+cd FrontEnd
+cp .env.example .env
+npm install
+npm run dev                          # UI en http://localhost:5173</code></pre>
+                  </div>
+                  <p class="panel__note">
+                    Usuarios de demostración (contraseña <code>rotios123</code>):
+                    <code>marta@buenpollo.com</code> (admin de El Buen Pollo),
+                    <code>diego@buenpollo.com</code> (cajero) y
+                    <code>pablo@buenpollo.com</code> (repartidor).
+                    Entrando con dos locales distintos se comprueba el aislamiento de datos.
+                  </p>
+                </div>
+              </details>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- ------------------------------------------------------------
+             3.2 FOLDERLY — Proyecto de automatización
+             ------------------------------------------------------------ -->
+        <article class="project reveal" id="folderly" aria-labelledby="folderly-titulo">
+
+          <header class="project__head">
+            <div class="project__tags">
+              <span class="tag tag--auto">Proyecto de automatización</span>
+              <span class="tag tag--state">Publicado</span>
+            </div>
+            <h3 class="project__title" id="folderly-titulo">Folderly</h3>
+            <p class="project__tagline">Ordena la carpeta Descargas de una vez, con un botón</p>
+            <p class="project__lead">
+              Aplicación de escritorio para Windows que agarra los archivos sueltos de una carpeta y
+              los acomoda en subcarpetas según su tipo, con un botón para deshacer el último orden.
+              Se distribuye como un único <code>.exe</code>, sin instalación.
+            </p>
+            <p class="project__role">Proyecto individual, desarrollado al 100 % por Ezequiel.</p>
+
+            <div class="btn-row">
+              <a class="btn btn--primary btn--download"
+                 href="https://github.com/Ezeluque1/Folderly/releases/latest/download/Folderly.exe">
+                <span class="btn__ext" aria-hidden="true">↓</span> Descargar Folderly.exe
+              </a>
+              <a class="btn btn--ghost" href="https://github.com/Ezeluque1/Folderly" target="_blank" rel="noopener noreferrer">
+                Ver repositorio <span class="btn__ext" aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <p class="project__note">Windows · un solo archivo de unos 11 MB · no requiere instalación.</p>
+          </header>
+
+
+          <div class="project__body">
+
+            <div class="block">
+              <h4 class="block__title">Números verificables</h4>
+              <p class="block__note">Tomados del repositorio.</p>
+              <ul class="stats">
+                <li class="stat"><span class="stat__num">87</span><span class="stat__label">pruebas automatizadas que no tocan las carpetas del usuario</span></li>
+                <li class="stat"><span class="stat__num">8</span><span class="stat__label">categorías de archivos</span></li>
+                <li class="stat"><span class="stat__num">11 MB</span><span class="stat__label">un único <code>.exe</code></span></li>
+              </ul>
+            </div>
+
+            <div class="accordion">
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Capturas de pantalla
+                  <span class="panel__count" data-shot-count></span>
+                </summary>
+                <div class="panel__body">
+                  <div class="gallery gallery--one" data-gallery="Folderly">
+                    <figure class="shot">
+                      <button class="shot__btn" type="button" data-shot aria-label="Ampliar: Ventana de Folderly ordenando la carpeta Descargas">
+                        <img src="assets/folderly-captura.png" alt="Ventana de Folderly ordenando la carpeta Descargas" width="776" height="699" loading="lazy" decoding="async">
+                      </button>
+                      <figcaption class="shot__cap">Ventana principal en funcionamiento</figcaption>
+                    </figure>
+
+                    <!-- FALTA LA CAPTURA "ANTES Y DESPUÉS". Cuando la tengas, guardala como
+                         assets/folderly-antes-despues.png, descomentá el <figure> de abajo y
+                         sacale la clase gallery--one al <div class="gallery"> de arriba.
+
+                    <figure class="shot">
+                      <button class="shot__btn" type="button" data-shot aria-label="Ampliar: Carpeta Descargas antes y después de usar Folderly">
+                        <img src="assets/folderly-antes-despues.png" alt="Carpeta Descargas antes y después de usar Folderly" loading="lazy" decoding="async">
+                      </button>
+                      <figcaption class="shot__cap">Carpeta desordenada y luego ordenada</figcaption>
+                    </figure>
+                    -->
+                  </div>
+                </div>
+              </details>
+
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Proceso que automatiza
+                </summary>
+                <div class="panel__body">
+                  <p>
+                    Ordenar a mano una carpeta Descargas desordenada: crear carpetas, mirar la extensión
+                    de cada archivo, arrastrarlos y resolver duplicados. Lleva entre 15 y 40 minutos cada
+                    vez; Folderly lo hace en segundos.
+                  </p>
+                  <h5 class="block__sub">Cómo se usa</h5>
+                  <ol class="list list--num">
+                    <li>Doble clic en <code>Folderly.exe</code>.</li>
+                    <li>Viene elegida la carpeta Descargas (se puede cambiar).</li>
+                    <li>Botón <strong>Ordenar ahora</strong> y confirmación.</li>
+                    <li>Se ve el progreso archivo por archivo; la ventana no se congela.</li>
+                    <li>Si no gusta el resultado, <strong>Deshacer último orden</strong> devuelve todo a su lugar.</li>
+                  </ol>
+                  <p class="panel__note">
+                    Categorías: Imágenes, Documentos, Planillas, Videos, Música, Instaladores,
+                    Comprimidos y Otros (8 en total).
+                  </p>
+                </div>
+              </details>
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Garantías de seguridad
+                </summary>
+                <div class="panel__body">
+                  <p class="block__note">Lo que nunca hace.</p>
+                  <ul class="list list--check">
+                    <li>No pisa archivos: si ya existe <code>foto.jpg</code>, el nuevo queda como <code>foto (1).jpg</code>.</li>
+                    <li>No toca subcarpetas ni archivos ocultos ni descargas en curso.</li>
+                    <li>No se mueve a sí misma.</li>
+                    <li>No se cierra si un archivo está en uso: lo saltea y avisa al final.</li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Decisiones técnicas destacadas
+                </summary>
+                <div class="panel__body">
+                  <ol class="decisions">
+                    <li>
+                      <strong>Interfaz que no se congela:</strong> el trabajo corre en un hilo aparte y se
+                      comunica con la ventana por una cola, porque tocar la interfaz desde otro hilo rompe Tkinter.
+                    </li>
+                    <li>
+                      <strong>Lógica pura separada de la interfaz</strong>, para poder probarla sin abrir
+                      ninguna ventana.
+                    </li>
+                    <li>
+                      <strong>Casos reales de Windows resueltos:</strong> la carpeta Descargas se busca en
+                      el registro (puede estar en otro disco) y las carpetas vacías de solo lectura que
+                      deja OneDrive se pueden borrar.
+                    </li>
+                    <li>
+                      <strong>Cero dependencias externas:</strong> todo viene con Python; el
+                      <code>.exe</code> pesa unos 11 MB.
+                    </li>
+                  </ol>
+                </div>
+              </details>
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Stack
+                </summary>
+                <div class="panel__body">
+                  <dl class="stack">
+                    <div class="stack__row">
+                      <dt>Lenguaje</dt>
+                      <dd><span class="chip">Python 3.10+</span></dd>
+                    </div>
+                    <div class="stack__row">
+                      <dt>Interfaz</dt>
+                      <dd><span class="chip">Tkinter / ttk</span></dd>
+                    </div>
+                    <div class="stack__row">
+                      <dt>Archivos</dt>
+                      <dd><span class="chip">pathlib</span><span class="chip">shutil</span></dd>
+                    </div>
+                    <div class="stack__row">
+                      <dt>Concurrencia</dt>
+                      <dd><span class="chip">threading</span><span class="chip">queue</span></dd>
+                    </div>
+                    <div class="stack__row">
+                      <dt>Empaquetado</dt>
+                      <dd><span class="chip">PyInstaller</span></dd>
+                    </div>
+                    <div class="stack__row">
+                      <dt>Publicación</dt>
+                      <dd><span class="chip">GitHub Actions: pruebas y construcción del <code>.exe</code> en cada Release</span></dd>
+                    </div>
+                  </dl>
+                </div>
+              </details>
+
+              <!-- GIF OPCIONAL: cuando lo tengas, guardalo como assets/folderly-demo.gif
+                   y descomentá este panel.
+
+              <details class="panel">
+                <summary class="panel__summary">
+                  <span class="panel__chev" aria-hidden="true">›</span>
+                  Demo en GIF
+                </summary>
+                <div class="panel__body">
+                  <img src="assets/folderly-demo.gif" alt="Folderly ordenando una carpeta y deshaciendo el orden" loading="lazy">
+                </div>
+              </details>
+              -->
+
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         4. HABILIDADES
+         ================================================================== -->
+    <section class="section" id="habilidades">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__kicker">03</p>
+          <h2 class="section__title">Habilidades</h2>
+        </header>
+
+        <ul class="skills reveal">
+          <li class="skill-card">
+            <h3 class="skill-card__title">Lenguajes</h3>
+            <ul class="chips">
+              <li class="chip">TypeScript / JavaScript (Node.js)</li>
+              <li class="chip">Python</li>
+              <li class="chip">SQL</li>
+            </ul>
+          </li>
+          <li class="skill-card">
+            <h3 class="skill-card__title">Backend</h3>
+            <ul class="chips">
+              <li class="chip">Express</li>
+              <li class="chip">API REST</li>
+              <li class="chip">JWT y bcrypt</li>
+              <li class="chip">Validación con Zod</li>
+              <li class="chip">Arquitectura en capas</li>
+              <li class="chip">Multitenancy</li>
+            </ul>
+          </li>
+          <li class="skill-card">
+            <h3 class="skill-card__title">Bases de datos</h3>
+            <ul class="chips">
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">Prisma ORM</li>
+            </ul>
+          </li>
+          <li class="skill-card">
+            <h3 class="skill-card__title">Testing</h3>
+            <ul class="chips">
+              <li class="chip">Vitest</li>
+              <li class="chip">Supertest</li>
+            </ul>
+          </li>
+          <li class="skill-card">
+            <h3 class="skill-card__title">CI/CD</h3>
+            <ul class="chips">
+              <li class="chip">GitHub Actions</li>
+            </ul>
+          </li>
+          <li class="skill-card">
+            <h3 class="skill-card__title">Herramientas</h3>
+            <ul class="chips">
+              <li class="chip">Git y GitHub</li>
+              <li class="chip">Postman</li>
+              <li class="chip">VS Code</li>
+              <li class="chip">Docker</li>
+              <!-- CONFIRMAR: el .md pide confirmar que usaste Swagger.
+                   Si no lo usaste, borrá el <li> de abajo. -->
+              <li class="chip">Swagger</li>
+            </ul>
+          </li>
+          <li class="skill-card">
+            <h3 class="skill-card__title">Frontend (complementario)</h3>
+            <ul class="chips">
+              <li class="chip">React</li>
+              <li class="chip">Tailwind CSS</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         5. CONTACTO
+         ================================================================== -->
+    <section class="section section--alt" id="contacto">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="section__kicker">04</p>
+          <h2 class="section__title">Contacto</h2>
+        </header>
+
+        <div class="contact reveal">
+          <p class="contact__text">
+            Estoy buscando mi primer rol como Backend Junior en un equipo remoto. Si te interesa mi
+            perfil o querés ver los proyectos en detalle, escribime.
+          </p>
+
+          <div class="btn-row">
+            <a class="btn btn--primary" href="mailto:ezequiel.luque.vdr1@gmail.com">
+              ezequiel.luque.vdr1@gmail.com
+            </a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/luque-ezequiel" target="_blank" rel="noopener noreferrer">
+              LinkedIn <span class="btn__ext" aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn--ghost" href="https://github.com/Ezeluque1" target="_blank" rel="noopener noreferrer">
+              GitHub <span class="btn__ext" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Ezequiel Luque · Villa del Rosario, Córdoba, Argentina</p>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       LIGHTBOX (ampliación de capturas). Se cierra con Escape, con el botón
+       o con clic en el fondo. Se navega con las flechas del teclado.
+       ==================================================================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" hidden>
+    <div class="lightbox__bar">
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+      <button class="lightbox__btn lightbox__close" type="button" data-lb-close>
+        <span aria-hidden="true">✕</span><span class="sr-only">Cerrar (Escape)</span>
+      </button>
+    </div>
+
+    <div class="lightbox__stage">
+      <button class="lightbox__btn lightbox__nav" type="button" data-lb-prev>
+        <span aria-hidden="true">‹</span><span class="sr-only">Captura anterior</span>
+      </button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="">
+      <button class="lightbox__btn lightbox__nav" type="button" data-lb-next>
+        <span aria-hidden="true">›</span><span class="sr-only">Captura siguiente</span>
+      </button>
+    </div>
+
+    <p class="lightbox__counter" id="lightbox-counter" aria-live="polite"></p>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
